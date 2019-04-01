@@ -16,7 +16,7 @@ var app = express();
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/product')
+mongoose.connect('mongodb://product123:product123@ds347665.mlab.com:47665/product-l')
   .then(() =>  console.log('connection successful'))
   .catch((err) => console.error(err));
 
